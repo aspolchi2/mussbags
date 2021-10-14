@@ -251,7 +251,7 @@ li {
 }
 @media only screen and (max-width: 991px) {
   .navbar-collapse {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.137), rgba(0, 0, 0, 0.05));
+    background: black;
   }
   .navbar-collapse .nav-item {
     margin-left: 15px;
