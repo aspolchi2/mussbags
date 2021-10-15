@@ -1,0 +1,74 @@
+$montserrat: 'Montserrat', sans-serif;
+$oswald: 'Oswald', sans-serif;
+$sixCaps: 'Six Caps', sans-serif;
+.cardsGroup{
+    .banner{
+    height: 300px;
+    width: 100%;
+    background-image: url(../img/banner.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+    letter-spacing: 15px;
+    
+        .spanMont{
+            font-family: $montserrat;
+            text-shadow: black 1px 1px 1px;
+            font-size: 3em;
+        }
+        .banner_title{
+            font-family: $oswald;
+            text-shadow: black .5px .5px .5px;
+        }
+    }
+        .cardsGroup__card{
+            position: relative;
+            transition: all 0.3 ease-in-out;
+                .cardsGroup__card--img{
+                    transition: 0.3s all ease-in-out;
+                    overflow: hidden;
+                    &:hover{
+                        transform: scale(1.1);
+                        overflow: hidden;
+                    }
+                    }
+                }
+                .card-title{
+                    font-family: $oswald;
+                }
+                .card-text{
+                    font-family: $montserrat;
+                }
+            }
+         
+            
+    
+    
+    
+        .border-1{
+        border-color: #f2f2f2;
+        }
+        
+
+
+    
+    
+    div{
+        overflow: hidden;
+    }
+    
+   
+
+
+
+
+
+
+
+
+

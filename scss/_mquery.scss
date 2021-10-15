@@ -1,0 +1,28 @@
+@media only screen and (max-width: 1000px) {
+    .main{
+        gap: 10px;
+        display: grid;
+        grid-template-areas: "sale"
+                             "coleccion"
+                             "accesorios"
+                             ;
+        grid-template-columns: 1fr;
+        grid-template-rows:59.36vh 59.36vh 59.36vh  ;
+    
+        .main__img{
+            width: 100%;
+        }
+    }
+    
+
+}
+@media only screen and (max-width: 767px) {
+    .footer{
+        .footer__menu{
+            display: none;
+    
+        }
+    }
+}
+
+   

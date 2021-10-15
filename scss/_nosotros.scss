@@ -1,0 +1,31 @@
+@mixin flexible ($flexDire){
+    display: flex;
+    flex-direction: $flexDire;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+
+.nosotros{
+    &__primer{
+        @include flexible(row);
+        &__primer--caja{
+            @include flexible(column);
+            &__primer--titulo{
+                justify-self: center;
+                align-self: center;
+                text-align: center
+            }
+        }
+    }
+    &__segundo{
+        @include flexible(row);
+        &__segundo--caja{
+            @include flexible(column)
+        }
+    }
+}
