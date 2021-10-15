@@ -11,7 +11,7 @@
 
 
 .nosotros{
-    margin: 13vh;
+    margin-top: 13vh;
     .nosotros__primer{
         @include flexible(row);
         .nosotros__primer--caja{
