@@ -11,21 +11,17 @@
 
 
 .nosotros{
-    &__primer{
+    margin: 13vh;
+    .nosotros__primer{
         @include flexible(row);
-        &__primer--caja{
+        .nosotros__primer--caja{
             @include flexible(column);
-            &__primer--titulo{
-                justify-self: center;
-                align-self: center;
-                text-align: center
             }
         }
     }
-    &__segundo{
+    .nosotros__segundo{
         @include flexible(row);
-        &__segundo--caja{
+        .nosotros__segundo--caja{
             @include flexible(column)
         }
     }
-}

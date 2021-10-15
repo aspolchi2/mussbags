@@ -13,6 +13,14 @@
             width: 100%;
         }
     }
+    .nosotros{
+        .nosotros__primer{
+           flex-direction: column;
+        }
+        .nosotros__segundo{
+            flex-direction: column-reverse;
+        }
+    }
     
 
 }
