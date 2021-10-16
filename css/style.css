@@ -175,6 +175,18 @@ li {
   list-style: none;
 }
 
+.item-1 {
+  width: 2em;
+}
+
+.item-2 {
+  width: 4em;
+}
+
+.item-3 {
+  width: 6em;
+}
+
 .nosotros {
   margin-top: 13vh;
 }
