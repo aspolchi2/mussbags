@@ -17,22 +17,52 @@
     border-bottom: $borde;
 
 }
+@mixin titulo ($spacing){
+                align-self: flex-start;
+                font-family: $oswald;
+                text-transform: uppercase;
+                letter-spacing: $spacing;
+}
 
 
 .nosotros{
-    margin-top: 13vh;
+    
+    max-width: 1000px;
+    margin: 9.871668311944719vh auto;
+    
     .nosotros__primer{
+        padding: 0 0 100px 0;
         @include flexible(row);
         .nosotros__primer--caja{
+            
+            
             @include flexible(column);
+            .nosotros__primer--titulo{
+                padding: 0 30px;
+                @include titulo(0.5px);
             }
+            .nosotros__primer--texto{
+                padding: 0 30px;
+                font-family: $montserrat
+
+            }
+
         }
+    }
     
     .nosotros__segundo{
         @include flexible(row);
         .nosotros__segundo--caja{
-            @include flexible(column)
+            @include flexible(column);
+            .nosotros__segundo--titulo{
+                @include titulo(0);
+            }
+            .nosotros__segundo--texto{
+                font-family: $montserrat;
+            }
+            
         }
+
     }
 
     

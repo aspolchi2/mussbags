@@ -232,10 +232,12 @@ li {
 }
 
 .nosotros {
-  margin-top: 13vh;
+  max-width: 1000px;
+  margin: 9.871668311944719vh auto;
 }
 
 .nosotros .nosotros__primer {
+  padding: 0 0 100px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -269,6 +271,20 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.nosotros .nosotros__primer .nosotros__primer--caja .nosotros__primer--titulo {
+  padding: 0 30px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.nosotros .nosotros__primer .nosotros__primer--caja .nosotros__primer--texto {
+  padding: 0 30px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .nosotros .nosotros__segundo {
@@ -305,6 +321,18 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.nosotros .nosotros__segundo .nosotros__segundo--caja .nosotros__segundo--titulo {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.nosotros .nosotros__segundo .nosotros__segundo--caja .nosotros__segundo--texto {
+  font-family: "Montserrat", sans-serif;
 }
 
 .nosotros .content {
