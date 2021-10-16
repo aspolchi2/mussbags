@@ -27,7 +27,7 @@
             @include flexible(column);
             }
         }
-    }
+    
     .nosotros__segundo{
         @include flexible(row);
         .nosotros__segundo--caja{
@@ -36,7 +36,7 @@
     }
 
     
-.content{
+    .content{
 
     max-width: 1170px;
     margin-left: auto;
@@ -92,5 +92,12 @@
                     }
                 }
             }
+    .belleza{
+        text-align: center;
+        font-size: 2rem;
+        font-family: $montserrat;
+        margin: 10px 0 100px 0;
+    }
+}
         
     
