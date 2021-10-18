@@ -6,6 +6,11 @@
 a{
     text-decoration: none;
     color: black;
+    &:hover{
+        color: rgba(0, 0, 0, 0.592);
+        
+
+    }
     
 }
 li{
