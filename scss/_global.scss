@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+    &:hover{
+        color: rgba(0, 0, 0, 0.592);
+        
+
+    }
+    
+}
+li{
+    list-style: none;
+}

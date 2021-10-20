@@ -1,0 +1,52 @@
+@media only screen and (max-width: 1000px) {
+    .main{
+        gap: 10px;
+        display: grid;
+        grid-template-areas: "sale"
+                             "coleccion"
+                             "accesorios"
+                             ;
+        grid-template-columns: 1fr;
+        grid-template-rows:59.36vh 59.36vh 59.36vh  ;
+    
+        .main__img{
+            width: 100%;
+        }
+    }
+    .nosotros{
+        .nosotros__primer{
+           flex-direction: column;
+        }
+        .nosotros__segundo{
+            flex-direction: column-reverse;
+        }
+    }
+    .cardsGroup{
+        width: 100%;
+            .banner{
+                letter-spacing: 0;
+                    .spanMont{
+                         font-size: 2em;
+            }
+        }
+    
+    }
+    .content{
+
+    .contact-wrapper{
+        grid-template-columns: 1fr;
+    }
+}
+    
+
+}
+@media only screen and (max-width: 767px) {
+    .footer{
+        .footer__menu{
+            display: none;
+    
+        }
+    }
+}
+
+   
