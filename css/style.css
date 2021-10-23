@@ -344,22 +344,15 @@ li {
 }
 .mainSale .sale {
   width: 98%;
-  margin: 1rem auto;
+  margin: auto;
 }
-.mainSale .sale .card {
-  width: 18rem;
-}
-.mainSale .sale .card .card-img-vista {
+.mainSale .sale .col .sale__img--oculta {
   position: absolute;
-  overflow: hidden;
-}
-.mainSale .sale .card .card-img-escondida {
-  transition: all 0.5s ease-in-out;
   opacity: 0;
+  transition: all 0.5s ease-in-out;
 }
-.mainSale .sale .card .card-img-escondida:hover {
+.mainSale .sale .col .sale__img--oculta:hover {
   opacity: 1;
-  z-index: 10;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -381,13 +374,13 @@ li {
     flex-direction: column-reverse;
   }
 
-  .cardsGroup {
+  .cardsGroup, .mainSale {
     width: 100%;
   }
-  .cardsGroup .banner {
+  .cardsGroup .banner, .mainSale .banner {
     letter-spacing: 0;
   }
-  .cardsGroup .banner .spanMont {
+  .cardsGroup .banner .spanMont, .mainSale .banner .spanMont {
     font-size: 2em;
   }
 

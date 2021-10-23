@@ -6,31 +6,26 @@
             font-family: $montserrat;
             text-shadow: black 1px 1px 1px;
             font-size: 3em;
-        }
+            }
         .banner_title{
             font-family: $oswald;
             text-shadow: black .5px .5px .5px;
+            }
         }
-    }
-    .sale{
-        width: 98%;
-        margin: 1rem auto;
-        
-        .card{
-            width: 18rem;
-           .card-img-vista{
-               position: absolute;
-               overflow: hidden;
-           }
-           .card-img-escondida{
-               transition: all 0.5s ease-in-out;
-               opacity: 0;
+        .sale{
+            width: 98%;
+            margin: auto;
+            .col{
+                .sale__img--oculta{
+                    position: absolute;
+                    opacity: 0;
+                    transition: all 0.5s ease-in-out;
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
                
-               &:hover{
-                   opacity: 1;
-                   z-index: 10;
-               }
-           }
+            }
         }
-    }
+
 }
