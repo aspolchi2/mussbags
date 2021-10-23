@@ -1,3 +1,45 @@
+@mixin banner (){
+    height: 300px;
+    width: 100%;
+    background-image: url(../img/banner.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+    letter-spacing: 2.2831050228310503vh;
+}
 .mainSale{
-    margin-top: 80px;
+    margin-top: 6rem;
+    .banner{
+        @include banner();
+        .spanMont{
+            font-family: $montserrat;
+            text-shadow: black 1px 1px 1px;
+            font-size: 3em;
+            }
+        .banner_title{
+            font-family: $oswald;
+            text-shadow: black .5px .5px .5px;
+            }
+        }
+        .sale{
+            width: 98%;
+            margin: auto;
+            .col{
+                .sale__img--oculta{
+                    position: absolute;
+                    opacity: 0;
+                    transition: all 0.5s ease-in-out;
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+               
+            }
+        }
+
 }

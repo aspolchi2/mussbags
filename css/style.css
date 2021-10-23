@@ -133,22 +133,25 @@ body {
   font-family: "Oswald", sans-serif;
   text-shadow: black 0.5px 0.5px 0.5px;
 }
-.cardsGroup .cardsGroup__card {
+
+.cardsGroup__card {
   position: relative;
   transition: all 0.3 ease-in-out;
 }
-.cardsGroup .cardsGroup__card .cardsGroup__card--img {
+.cardsGroup__card .cardsGroup__card--img {
   transition: 0.3s all ease-in-out;
   overflow: hidden;
 }
-.cardsGroup .cardsGroup__card .cardsGroup__card--img:hover {
+.cardsGroup__card .cardsGroup__card--img:hover {
   transform: scale(1.1);
   overflow: hidden;
 }
-.cardsGroup .card-title {
+
+.card-title {
   font-family: "Oswald", sans-serif;
 }
-.cardsGroup .card-text {
+
+.card-text {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -314,7 +317,42 @@ li {
 }
 
 .mainSale {
-  margin-top: 80px;
+  margin-top: 6rem;
+}
+.mainSale .banner {
+  height: 300px;
+  width: 100%;
+  background-image: url(../img/banner.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: white;
+  letter-spacing: 2.2831050228vh;
+}
+.mainSale .banner .spanMont {
+  font-family: "Montserrat", sans-serif;
+  text-shadow: black 1px 1px 1px;
+  font-size: 3em;
+}
+.mainSale .banner .banner_title {
+  font-family: "Oswald", sans-serif;
+  text-shadow: black 0.5px 0.5px 0.5px;
+}
+.mainSale .sale {
+  width: 98%;
+  margin: auto;
+}
+.mainSale .sale .col .sale__img--oculta {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.mainSale .sale .col .sale__img--oculta:hover {
+  opacity: 1;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -336,13 +374,13 @@ li {
     flex-direction: column-reverse;
   }
 
-  .cardsGroup {
+  .cardsGroup, .mainSale {
     width: 100%;
   }
-  .cardsGroup .banner {
+  .cardsGroup .banner, .mainSale .banner {
     letter-spacing: 0;
   }
-  .cardsGroup .banner .spanMont {
+  .cardsGroup .banner .spanMont, .mainSale .banner .spanMont {
     font-size: 2em;
   }
 

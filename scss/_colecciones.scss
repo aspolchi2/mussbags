@@ -1,9 +1,8 @@
 $montserrat: 'Montserrat', sans-serif;
 $oswald: 'Oswald', sans-serif;
 $sixCaps: 'Six Caps', sans-serif;
-.cardsGroup{
-    margin-top: 13vh;
-    .banner{
+
+@mixin banner (){
     height: 300px;
     width: 100%;
     background-image: url(../img/banner.jpg);
@@ -16,8 +15,12 @@ $sixCaps: 'Six Caps', sans-serif;
     flex-wrap: wrap;
     color: white;
     letter-spacing: 2.2831050228310503vh;
-    
-        .spanMont{
+}
+.cardsGroup{
+    margin-top: 13vh;
+     .banner{
+         @include banner();
+         .spanMont{
             font-family: $montserrat;
             text-shadow: black 1px 1px 1px;
             font-size: 3em;
@@ -26,7 +29,9 @@ $sixCaps: 'Six Caps', sans-serif;
             font-family: $oswald;
             text-shadow: black .5px .5px .5px;
         }
+     }
     }
+    
         .cardsGroup__card{
             position: relative;
             transition: all 0.3 ease-in-out;
@@ -45,7 +50,8 @@ $sixCaps: 'Six Caps', sans-serif;
                 .card-text{
                     font-family: $montserrat;
                 }
-            }
+        
+        
          
             
     
