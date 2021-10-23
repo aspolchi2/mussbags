@@ -1,3 +1,17 @@
+@mixin banner (){
+    height: 300px;
+    width: 100%;
+    background-image: url(../img/banner.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+    letter-spacing: 2.2831050228310503vh;
+}
 .mainSale{
     margin-top: 6rem;
     .banner{
