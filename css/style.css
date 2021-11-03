@@ -107,6 +107,10 @@ body {
   height: auto;
 }
 
+.maxw {
+  max-width: 99%;
+}
+
 .cardsGroup {
   margin-top: 6rem;
 }
