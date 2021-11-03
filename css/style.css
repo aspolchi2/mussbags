@@ -357,4 +357,7 @@ li {
   .footer .footer__menu {
     display: none;
   }
+  .footer .footer__contacto {
+    margin-top: 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */
