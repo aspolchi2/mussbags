@@ -1,9 +1,9 @@
 body {
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 .sixCaps {
-  font-family: "Six Caps", sans-serif;
+  font-family: 'Six Caps', sans-serif;
   letter-spacing: 1vw;
   font-size: 32px;
 }
@@ -17,68 +17,83 @@ body {
   width: 99%;
   margin: auto;
   gap: 5px;
+  display: -ms-grid;
   display: grid;
-  grid-template-areas: "coleccion sale" "accesorios sale";
-  grid-template-columns: 2fr 3fr;
-  grid-template-rows: 59.36vh 59.36vh;
+      grid-template-areas: "coleccion sale" "accesorios sale";
+  -ms-grid-columns: 2fr 3fr;
+      grid-template-columns: 2fr 3fr;
+  -ms-grid-rows: 59.36vh 59.36vh;
+      grid-template-rows: 59.36vh 59.36vh;
   /* .main__banner{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: rgb(241, 241, 241);
-      letter-spacing: 15px;
-      grid-area: banner;
-      height: 100%;
-      background-image: url(../img/banner.jpg);
-      background-attachment: fixed;
-      background-size: cover;
-      .spanMont{
-          font-family: 'Montserrat', sans-serif;
-          text-shadow: black 1px 1px 1px;
-          font-size: 32px;
-      }
-
-  } */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: rgb(241, 241, 241);
+        letter-spacing: 15px;
+        grid-area: banner;
+        height: 100%;
+        background-image: url(../img/banner.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        .spanMont{
+            font-family: 'Montserrat', sans-serif;
+            text-shadow: black 1px 1px 1px;
+            font-size: 32px;
+        }
+    
+    } */
 }
+
 .main .main__img {
   max-width: 100%;
   max-height: 100%;
   height: 100%;
   opacity: 0.9;
+  -webkit-transition: all 1s;
   transition: all 1s;
   -o-object-fit: cover;
      object-fit: cover;
 }
+
 .main .main__img:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   overflow: hidden;
   opacity: 1;
 }
+
 .main .main__effect {
+  -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
   display: inline-block;
   overflow: hidden;
 }
+
 .main .main__effect a {
   color: white;
   text-decoration: none;
 }
+
 .main:hover .main__effect--span {
   overflow: hidden;
 }
+
 .main .main__effect--span {
   font-size: 48px;
+  -webkit-transition: all 1.5s ease-in-out;
   transition: all 1.5s ease-in-out;
   text-shadow: black 1px 1px 1px;
   z-index: 998;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   color: white;
 }
+
 .main .main__effect--bigText {
   font-size: 90px;
 }
@@ -87,6 +102,8 @@ body {
   position: relative;
   display: inline-block;
   text-align: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: coleccion;
   height: auto;
 }
@@ -95,6 +112,9 @@ body {
   position: relative;
   display: inline-block;
   text-align: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
   grid-area: sale;
   height: auto;
 }
@@ -103,6 +123,8 @@ body {
   position: relative;
   display: inline-block;
   text-align: center;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: accesorios;
   height: auto;
 }
@@ -114,40 +136,58 @@ body {
 .cardsGroup {
   margin-top: 6rem;
 }
+
 .cardsGroup .banner {
   height: 300px;
   width: 100%;
   background-image: url(../img/banner.jpg);
   background-attachment: fixed;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   color: white;
-  letter-spacing: 2.2831050228vh;
+  letter-spacing: 2.2831050228310503vh;
 }
+
 .cardsGroup .banner .spanMont {
   font-family: "Montserrat", sans-serif;
   text-shadow: black 1px 1px 1px;
   font-size: 3em;
 }
+
 .cardsGroup .banner .banner_title {
   font-family: "Oswald", sans-serif;
-  text-shadow: black 0.5px 0.5px 0.5px;
+  text-shadow: black .5px .5px .5px;
 }
 
 .cardsGroup__card {
   position: relative;
+  -webkit-transition: all 0.3 ease-in-out;
   transition: all 0.3 ease-in-out;
 }
+
 .cardsGroup__card .cardsGroup__card--img {
+  -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
   overflow: hidden;
 }
+
 .cardsGroup__card .cardsGroup__card--img:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   overflow: hidden;
 }
 
@@ -170,13 +210,15 @@ div {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a {
   text-decoration: none;
   color: black;
 }
+
 a:hover {
   color: rgba(0, 0, 0, 0.592);
 }
@@ -199,81 +241,140 @@ li {
 
 .nosotros {
   max-width: 1000px;
-  margin: 9.8716683119vh auto;
+  margin: 9.871668311944719vh auto;
 }
+
 .nosotros .nosotros__primer {
   padding: 0 0 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .nosotros .nosotros__primer .nosotros__primer--caja {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .nosotros .nosotros__primer .nosotros__primer--caja .nosotros__primer--titulo {
   padding: 0 30px;
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
+
 .nosotros .nosotros__primer .nosotros__primer--caja .nosotros__primer--texto {
   padding: 0 30px;
   font-family: "Montserrat", sans-serif;
 }
+
 .nosotros .nosotros__segundo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .nosotros .nosotros__segundo .nosotros__segundo--caja {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .nosotros .nosotros__segundo .nosotros__segundo--caja .nosotros__segundo--titulo {
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0;
 }
+
 .nosotros .nosotros__segundo .nosotros__segundo--caja .nosotros__segundo--texto {
   font-family: "Montserrat", sans-serif;
 }
+
 .nosotros .content {
   max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
   padding: 1.5em;
 }
+
 .nosotros .contact-wrapper {
-  box-shadow: 0 0 20px rgba(128, 128, 128, 0.359);
-  padding: 0.3em;
+  -webkit-box-shadow: 0 0 20px rgba(128, 128, 128, 0.359);
+          box-shadow: 0 0 20px rgba(128, 128, 128, 0.359);
+  padding: .3em;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
 }
+
 .nosotros .contact-wrapper .contact-form {
   font-family: "Oswald", sans-serif;
   margin: 0;
   padding: 1em;
 }
+
 .nosotros .contact-wrapper .contact-info {
   color: #d7d7d7;
   font-family: "Montserrat", sans-serif;
 }
+
 .nosotros .contact-wrapper .contact-info .h4 {
   font-family: "Oswald", sans-serif;
 }
+
 .nosotros .belleza {
   text-align: center;
   font-size: 2rem;
@@ -284,38 +385,55 @@ li {
 .mainSale {
   margin-top: 6rem;
 }
+
 .mainSale .banner {
   height: 300px;
   width: 100%;
   background-image: url(../img/banner.jpg);
   background-attachment: fixed;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   color: white;
-  letter-spacing: 2.2831050228vh;
+  letter-spacing: 2.2831050228310503vh;
 }
+
 .mainSale .banner .spanMont {
   font-family: "Montserrat", sans-serif;
   text-shadow: black 1px 1px 1px;
   font-size: 3em;
 }
+
 .mainSale .banner .banner_title {
   font-family: "Oswald", sans-serif;
-  text-shadow: black 0.5px 0.5px 0.5px;
+  text-shadow: black .5px .5px .5px;
 }
+
 .mainSale .sale {
   width: 98%;
   margin: auto;
 }
+
 .mainSale .sale .col .sale__img--oculta {
   position: absolute;
   opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
+
 .mainSale .sale .col .sale__img--oculta:hover {
   opacity: 1;
 }
@@ -323,22 +441,29 @@ li {
 @media only screen and (max-width: 1000px) {
   .main {
     gap: 10px;
+    display: -ms-grid;
     display: grid;
-    grid-template-areas: "sale" "coleccion" "accesorios";
-    grid-template-columns: 1fr;
-    grid-template-rows: 59.36vh 59.36vh 59.36vh;
+        grid-template-areas: "sale" "coleccion" "accesorios";
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 59.36vh 59.36vh 59.36vh;
+        grid-template-rows: 59.36vh 59.36vh 59.36vh;
   }
   .main .main__img {
     width: 100%;
   }
-
   .nosotros .nosotros__primer {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .nosotros .nosotros__segundo {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
-
   .cardsGroup, .mainSale {
     width: 100%;
   }
@@ -348,11 +473,12 @@ li {
   .cardsGroup .banner .spanMont, .mainSale .banner .spanMont {
     font-size: 2em;
   }
-
   .content .contact-wrapper {
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
+
 @media only screen and (max-width: 767px) {
   .footer .footer__menu {
     display: none;
@@ -360,4 +486,5 @@ li {
   .footer .footer__contacto {
     margin-top: 1rem;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
