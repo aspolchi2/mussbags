@@ -57,11 +57,11 @@ while (compras != "FIN") {
             alert("Ingresa el numero indicado en el prompt asqueroso este ")
             break;
     }
-    compras = prompt(`¿Desea comprar algo mas? ingrese el numero del ITEM que desea comprar \n 
-    1) ${CarteraConEstrellas.producto}, $${CarteraConEstrellas.precio} \n 
-    2) ${CarteraConCorazones.producto}, $${CarteraConCorazones.precio} \n
-    3) ${Cinturones.producto}, $${Cinturones.precio} \n 
-    4) ${Mochila.producto}, $${Mochila.precio} \n
+    compras = prompt(`¿Desea comprar algo mas? ingrese el numero del ITEM que desea comprar
+    1) ${CarteraConEstrellas.producto}, $${CarteraConEstrellas.precio}
+    2) ${CarteraConCorazones.producto}, $${CarteraConCorazones.precio}
+    3) ${Cinturones.producto}, $${Cinturones.precio}
+    4) ${Mochila.producto}, $${Mochila.precio}
     Cuando no quiera agregar mas cosas al carrito ingrese FIN`)
 
 }
