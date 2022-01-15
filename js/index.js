@@ -79,11 +79,11 @@ alert(`El precio final es de = $${sum}`)
 
 
 //funcion para agregar el costo del envio si el precio final es menos de 5000
-function envioGratis (finalPrice){
+function envioGratis(finalPrice) {
     let precioConEnvio = sum + 300
-    if(finalPrice > 5000){
+    if (finalPrice > 5000) {
         alert("El envio es sin cargo ")
-    }else {
+    } else {
         alert(`El costo del envio es de $300.
 precio final (envio incluido) = $${precioConEnvio}
 El envio es gratis a partir de los $5000`)
